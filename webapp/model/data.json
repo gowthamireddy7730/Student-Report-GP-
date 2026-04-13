@@ -1,0 +1,622 @@
+
+{
+  "student": {
+    "id": "S101",
+    "name": "Ravi Kumar",
+    "class": "10th",
+    "dob": "2005-06-15",
+    "aadhar": "1234-5678-9012",
+    "fatherName": "Ramesh Kumar",
+    "motherName": "Sita Devi",
+    "phone": "9876543201",
+    "subjects": { "maths": 87, "physics": 85, "chemistry": 82, "english": 90, "science": 86 }
+  },
+
+  "students": [
+    {
+      "id": "S101",
+      "name": "Ravi Kumar",
+      "class": "10th",
+      "dob": "2005-06-15",
+      "aadhar": "1234-5678-9012",
+      "fatherName": "Ramesh Kumar",
+      "motherName": "Sita Devi",
+      "phone": "9876543201", 
+      "subjects": { "maths": 87, "physics": 85, "chemistry": 82, "english": 90, "science": 86 }
+    },
+    {
+      "id": "S102",
+      "name": "Anjali Sharma",
+      "class": "10th",
+      "dob": "2006-03-10",
+      "aadhar": "9876-5432-1111",
+      "fatherName": "Suresh Sharma",
+      "motherName": "Lakshmi Sharma",
+      "phone": "9876543202", 
+      "subjects": { "maths": 20, "physics": 52, "chemistry": 48, "english": 60, "science": 55 }
+    },
+    {
+      "id": "S103",
+      "name": "Kiran Reddy",
+      "class": "10th",
+      "dob": "2005-11-22",
+      "aadhar": "4567-8910-2345",
+      "fatherName": "Prasad Reddy",
+      "motherName": "Anitha Reddy",
+      "phone": "9876543203",
+      "subjects": { "maths": 30, "physics": 65, "chemistry": 70, "english": 72, "science": 68 }
+    },
+
+    {
+      "id": "S104",
+      "name": "Sneha Patel",
+      "class": "10th",
+      "dob": "2006-01-05",
+      "aadhar": "6543-2109-8765",
+      "fatherName": "Mahesh Patel",
+      "motherName": "Kavita Patel",
+      "phone": "9876543204", 
+      "subjects": { "maths": 90, "physics": 92, "chemistry": 88, "english": 85, "science": 91 }
+    },
+
+    {
+      "id": "S105",
+      "name": "Arjun Singh",
+      "class": "10th",
+      "dob": "2005-08-19",
+      "aadhar": "3210-9876-5432",
+      "fatherName": "Raj Singh",
+      "motherName": "Pooja Singh",
+      "phone": "9876543205", 
+      "subjects": { "maths": 34, "physics": 33, "chemistry": 40, "english": 38, "science": 36 }
+    },
+
+    {
+      "id": "S106",
+      "name": "Meena Iyer",
+      "class": "10th",
+      "dob": "2006-04-12",
+      "aadhar": "1122-3344-5566",
+      "fatherName": "Srinivas Iyer",
+      "motherName": "Radha Iyer",
+      "phone": "9876543206", 
+      "subjects": { "maths": 75, "physics": 78, "chemistry": 72, "english": 70, "science": 74 }
+    },
+
+    {
+      "id": "S107",
+      "name": "Rahul Das",
+      "class": "10th",
+      "dob": "2005-09-30",
+      "aadhar": "7788-9900-1122",
+      "fatherName": "Subhash Das",
+      "motherName": "Mina Das",
+      "phone": "9876543207",
+      "subjects": { "maths": 20, "physics": 25, "chemistry": 30, "english": 28, "science": 22 }
+    },
+
+    {
+      "id": "S108",
+      "name": "Pooja Verma",
+      "class": "10th",
+      "dob": "2006-02-17",
+      "aadhar": "2233-4455-6677",
+      "fatherName": "Amit Verma",
+      "motherName": "Neha Verma",
+      "phone": "9876543208", 
+      "subjects": { "maths": 60, "physics": 62, "chemistry": 58, "english": 65, "science": 61 }
+    },
+
+    {
+      "id": "S109",
+      "name": "Vikram Rao",
+      "class": "10th",
+      "dob": "2005-12-25",
+      "aadhar": "8899-0011-2233",
+      "fatherName": "Krishna Rao",
+      "motherName": "Lalitha Rao",
+      "phone": "9876543209",
+      "subjects": { "maths": 95, "physics": 93, "chemistry": 97, "english": 92, "science": 96 }
+    },
+
+    {
+      "id": "S110",
+      "name": "Divya Nair",
+      "class": "10th",
+      "dob": "2006-05-08",
+      "aadhar": "3344-5566-7788",
+      "fatherName": "Mohan Nair",
+      "motherName": "Geetha Nair",
+      "phone": "9876543210",
+      "subjects": { "maths": 40, "physics": 42, "chemistry": 38, "english": 45, "science": 41 }
+    },
+
+  {
+    "id": "S111",
+    "name": "Rohit Gupta",
+    "class": "10th",
+    "dob": "2005-07-11",
+    "aadhar": "1111-2222-3333",
+    "fatherName": "Amit Gupta",
+    "motherName": "Rekha Gupta",
+    "phone": "9876543211",
+    "subjects": { "maths": 33, "physics": 70, "chemistry": 75, "english": 80, "science": 78 }
+  },
+
+  {
+    "id": "S112",
+    "name": "Neha Joshi",
+    "class": "10th",
+    "dob": "2006-06-21",
+    "aadhar": "4444-5555-6666",
+    "fatherName": "Ravi Joshi",
+    "motherName": "Sunita Joshi",
+    "phone": "9876543212",
+    "subjects": { "maths": 55, "physics": 58, "chemistry": 60, "english": 62, "science": 57 } 
+  },
+
+  {
+    "id": "S113",
+    "name": "Ajay Kumar",
+    "class": "10th",
+    "dob": "2005-03-18",
+    "aadhar": "7777-8888-9999",
+    "fatherName": "Sanjay Kumar",
+    "motherName": "Meera Kumar",
+    "phone": "9876543213",
+    "subjects": { "maths": 28, "physics": 35, "chemistry": 32, "english": 30, "science": 34 }
+  },
+
+  {
+    "id": "S114",
+    "name": "Priya Singh",
+    "class": "10th",
+    "dob": "2006-09-09",
+    "aadhar": "1212-3434-5656",
+    "fatherName": "Vijay Singh",
+    "motherName": "Anita Singh",
+    "phone": "9876543214",
+    "subjects": { "maths": 85, "physics": 80, "chemistry": 82, "english": 78, "science": 84 }
+  },
+
+  {
+    "id": "S115",
+    "name": "Manoj Yadav",
+    "class": "10th",
+    "dob": "2005-10-10",
+    "aadhar": "7878-9090-1010",
+    "fatherName": "Rakesh Yadav",
+    "motherName": "Poonam Yadav",
+    "phone": "9876543215",
+    "subjects": { "maths": 50, "physics": 48, "chemistry": 52, "english": 55, "science": 49 }
+  },
+
+  {
+    "id": "S116",
+    "name": "Kavya Reddy",
+    "class": "10th",
+    "dob": "2006-11-11",
+    "aadhar": "2020-3030-4040",
+    "fatherName": "Ravi Reddy",
+    "motherName": "Sujatha Reddy",
+    "phone": "9876543216",
+    "subjects": { "maths": 32, "physics": 30, "chemistry": 35, "english": 28, "science": 31 }
+  },
+
+  {
+    "id": "S117",
+    "name": "Tarun Kumar",
+    "class": "10th",
+    "dob": "2005-12-12",
+    "aadhar": "5050-6060-7070",
+    "fatherName": "Prakash Kumar",
+    "motherName": "Latha Kumar",
+    "phone": "9876543217",
+    "subjects": { "maths": 70, "physics": 72, "chemistry": 68, "english": 75, "science": 73 }
+  },
+
+  {
+    "id": "S118",
+    "name": "Snehal Patil",
+    "class": "10th",
+    "dob": "2006-01-13",
+    "aadhar": "8080-9090-0000",
+    "fatherName": "Sunil Patil",
+    "motherName": "Anjali Patil",
+    "phone": "9876543218",
+    "subjects": { "maths": 90, "physics": 88, "chemistry": 92, "english": 94, "science": 91 }
+  },
+
+  {
+    "id": "S119",
+    "name": "Deepak Sharma",
+    "class": "10th",
+    "dob": "2005-02-14",
+    "aadhar": "9191-8282-7373",
+    "fatherName": "Om Sharma",
+    "motherName": "Radha Sharma",
+    "phone": "9876543219",
+    "subjects": { "maths": 36, "physics": 38, "chemistry": 34, "english": 40, "science": 39 }
+  },
+
+  {
+    "id": "S120",
+    "name": "Asha Devi",
+    "class": "10th",
+    "dob": "2006-03-15",
+    "aadhar": "6262-5151-4141",
+    "fatherName": "Hari Prasad",
+    "motherName": "Sita Devi",
+    "phone": "9876543220", 
+    "subjects": { "maths": 25, "physics": 28, "chemistry": 30, "english": 27, "science": 29 }
+  },
+
+  {
+    "id": "S121",
+    "name": "Nikhil Jain",
+    "class": "10th",
+    "dob": "2005-04-16",
+    "aadhar": "1112-2223-3334",
+    "fatherName": "Raj Jain",
+    "motherName": "Pooja Jain",
+    "phone": "9876543221",
+    "subjects": { "maths": 78, "physics": 80, "chemistry": 76, "english": 82, "science": 79 }
+  }, 
+
+  {
+    "id": "S122",
+    "name": "Riya Kapoor",
+    "class": "10th",
+    "dob": "2006-05-17",
+    "aadhar": "4445-5556-6667",
+    "fatherName": "Amit Kapoor",
+    "motherName": "Neetu Kapoor",
+    "phone": "9876543222",
+    "subjects": { "maths": 34, "physics": 60, "chemistry": 62, "english": 65, "science": 61 }
+  },
+
+  {
+    "id": "S123",
+    "name": "Suresh Naidu",
+    "class": "10th",
+    "dob": "2005-06-18",
+    "aadhar": "7778-8889-9990",
+    "fatherName": "Krishna Naidu",
+    "motherName": "Lakshmi Naidu",
+    "phone": "9876543223",
+    "subjects": { "maths": 88, "physics": 85, "chemistry": 87, "english": 89, "science": 86 }
+  },
+
+  {
+    "id": "S124",
+    "name": "Lakshmi Devi",
+    "class": "10th",
+    "dob": "2006-07-19",
+    "aadhar": "1213-3435-5657",
+    "fatherName": "Ramu",
+    "motherName": "Savitri",
+    "phone": "9876543224",
+    "subjects": { "maths": 45, "physics": 48, "chemistry": 50, "english": 47, "science": 46 }
+  },
+
+  {
+    "id": "S125",
+    "name": "Harish Kumar",
+    "class": "10th",
+    "dob": "2005-08-20",
+    "aadhar": "7879-9091-1011",
+    "fatherName": "Gopal",
+    "motherName": "Radha",
+    "phone": "9876543225",
+    "subjects": { "maths": 29, "physics": 32, "chemistry": 30, "english": 28, "science": 27 }
+  },
+
+  {
+    "id": "S126",
+    "name": "Divya Sharma",
+    "class": "10th",
+    "dob": "2006-09-21",
+    "aadhar": "2021-3031-4041",
+    "fatherName": "Rakesh",
+    "motherName": "Suman",
+    "phone": "9876543226",
+    "subjects": { "maths": 65, "physics": 68, "chemistry": 70, "english": 72, "science": 66 }
+  },
+
+  {
+    "id": "S127",
+    "name": "Vivek Singh",
+    "class": "10th",
+    "dob": "2005-10-22",
+    "aadhar": "5051-6061-7071",
+    "fatherName": "Mahesh",
+    "motherName": "Anita",
+    "phone": "9876543227",
+    "subjects": { "maths": 90, "physics": 91, "chemistry": 89, "english": 92, "science": 93 }
+  },
+
+  {
+    "id": "S128",
+    "name": "Pallavi Reddy",
+    "class": "10th",
+    "dob": "2006-11-23",
+    "aadhar": "8081-9091-0001",
+    "fatherName": "Srinivas",
+    "motherName": "Padma",
+    "phone": "9876543228",
+    "subjects": { "maths": 35, "physics": 36, "chemistry": 34, "english": 33, "science": 32 }
+  },
+
+  {
+    "id": "S129",
+    "name": "Ramesh Das",
+    "class": "10th",
+    "dob": "2005-12-24",
+    "aadhar": "9192-8283-7374",
+    "fatherName": "Subhash",
+    "motherName": "Mina",
+    "phone": "9876543229",
+    "subjects": { "maths": 55, "physics": 52, "chemistry": 58, "english": 60, "science": 57 }
+  },
+
+  {
+    "id": "S130",
+    "name": "Anita Verma",
+    "class": "10th",
+    "dob": "2006-01-25",
+    "aadhar": "6263-5152-4142",
+    "fatherName": "Amit",
+    "motherName": "Neha",
+    "phone": "9876543230",
+    "subjects": { "maths": 20, "physics": 22, "chemistry": 25, "english": 18, "science": 21 }
+  },
+
+  {
+    "id": "S131",
+    "name": "Karthik Rao",
+    "class": "10th",
+    "dob": "2005-02-26",
+    "aadhar": "1235-5679-9013",
+    "fatherName": "Krishna Rao",
+    "motherName": "Lalitha",
+    "phone": "9876543231",
+    "subjects": { "maths": 75, "physics": 78, "chemistry": 80, "english": 77, "science": 79 }
+  },
+
+  {
+    "id": "S132",
+    "name": "Swathi Iyer",
+    "class": "10th",
+    "dob": "2006-03-27",
+    "aadhar": "9877-5433-1112",
+    "fatherName": "Srinivas",
+    "motherName": "Radha",
+    "phone": "9876543232",
+    "subjects": { "maths": 33, "physics": 34, "chemistry": 32, "english": 31, "science": 30 }
+  },
+
+  {
+    "id": "S133",
+    "name": "Ganesh Reddy",
+    "class": "10th",
+    "dob": "2005-04-28",
+    "aadhar": "4568-8911-2346",
+    "fatherName": "Prasad",
+    "motherName": "Anitha",
+    "phone": "9876543233",
+    "subjects": { "maths": 85, "physics": 87, "chemistry": 84, "english": 86, "science": 88 }
+  },
+
+  {
+    "id": "S134",
+    "name": "Keerthi Patel",
+    "class": "10th",
+    "dob": "2006-05-29",
+    "aadhar": "6544-2110-8766",
+    "fatherName": "Mahesh",
+    "motherName": "Kavita",
+    "phone": "9876543234", 
+    "subjects": { "maths": 60, "physics": 62, "chemistry": 58, "english": 61, "science": 59 }
+  },
+
+  {
+    "id": "S135",
+    "name": "Rohan Singh",
+    "class": "10th",
+    "dob": "2005-06-30",
+    "aadhar": "3211-9877-5433",
+    "fatherName": "Raj",
+    "motherName": "Pooja",
+    "phone": "9876543235",
+    "subjects": { "maths": 28, "physics": 30, "chemistry": 32, "english": 29, "science": 31 }
+  },
+
+  {
+    "id": "S136",
+    "name": "Nisha Nair",
+    "class": "10th",
+    "dob": "2006-07-01",
+    "aadhar": "1123-3345-5567",
+    "fatherName": "Mohan",
+    "motherName": "Geetha",
+    "phone": "9876543236", 
+    "subjects": { "maths": 92, "physics": 94, "chemistry": 90, "english": 91, "science": 93 }
+  },
+
+  {
+    "id": "S137",
+    "name": "Amit Das",
+    "class": "10th",
+    "dob": "2005-08-02",
+    "aadhar": "7789-9901-1123",
+    "fatherName": "Subhash",
+    "motherName": "Mina",
+    "phone": "9876543237",
+    "subjects": { "maths": 48, "physics": 45, "chemistry": 50, "english": 52, "science": 47 }
+  },
+
+  {
+    "id": "S138",
+    "name": "Shreya Verma",
+    "class": "10th",
+    "dob": "2006-09-03",
+    "aadhar": "2234-4456-6678",
+    "fatherName": "Amit",
+    "motherName": "Neha",
+    "phone": "9876543238",
+    "subjects": { "maths": 34, "physics": 33, "chemistry": 35, "english": 36, "science": 34 }
+  },
+
+  {
+    "id": "S139",
+    "name": "Sanjay Rao",
+    "class": "10th",
+    "dob": "2005-10-04",
+    "aadhar": "8890-0012-2234",
+    "fatherName": "Krishna",
+    "motherName": "Lalitha",
+    "phone": "9876543239", 
+    "subjects": { "maths": 70, "physics": 72, "chemistry": 68, "english": 74, "science": 71 }
+  },
+  {
+    "id": "S140",
+    "name": "Meera Nair",
+    "class": "10th",
+    "dob": "2006-11-05",
+    "aadhar": "3345-5567-7789",
+    "fatherName": "Mohan",
+    "motherName": "Geetha",
+    "phone": "9876543240", 
+    "subjects": { "maths": 25, "physics": 28, "chemistry": 27, "english": 26, "science": 29 }
+  },
+
+  {
+  "id": "S141",
+  "name": "Akash Kumar",
+  "class": "10th",
+  "dob": "2005-01-01",
+  "aadhar": "1111-2222-3334",
+  "fatherName": "Ravi Kumar",
+  "motherName": "Sita Kumari",
+  "phone": "9876543241", 
+  "subjects": { "maths": 80, "physics": 82, "chemistry": 78, "english": 81, "science": 79 }
+  },
+
+  {
+  "id": "S142",
+  "name": "Bhavana Reddy",
+  "class": "10th",
+  "dob": "2005-02-02",
+  "aadhar": "1111-2222-3335",
+  "fatherName": "Ramesh Reddy",
+  "motherName": "Lakshmi Reddy",
+  "phone": "9876543242",
+  "subjects": { "maths": 30, "physics": 32, "chemistry": 31, "english": 29, "science": 28 }
+  },
+
+  {
+  "id": "S143",
+  "name": "Chandan Singh",
+  "class": "10th",
+  "dob": "2005-03-03",
+  "aadhar": "1111-2222-3336",
+  "fatherName": "Raj Singh",
+  "motherName": "Pooja Singh",
+  "phone": "9876543243",
+  "subjects": { "maths": 88, "physics": 85, "chemistry": 90, "english": 87, "science": 89 }
+  },
+
+  {
+  "id": "S144",
+  "name": "Deepika Sharma",
+  "class": "10th",
+  "dob": "2005-04-04",
+  "aadhar": "1111-2222-3337",
+  "fatherName": "Suresh Sharma",
+  "motherName": "Anita Sharma",
+  "phone": "9876543244", 
+  "subjects": { "maths": 55, "physics": 58, "chemistry": 60, "english": 57, "science": 56 }
+  },
+
+  {
+  "id": "S145",
+  "name": "Eshwar Naidu",
+  "class": "10th",
+  "dob": "2005-05-05",
+  "aadhar": "1111-2222-3338",
+  "fatherName": "Krishna Naidu",
+  "motherName": "Lakshmi Naidu",
+  "phone": "9876543245", 
+  "subjects": { "maths": 33, "physics": 34, "chemistry": 32, "english": 35, "science": 31 }
+  },
+
+  {
+  "id": "S146",
+  "name": "Farhan Ali",
+  "class": "10th",
+  "dob": "2005-06-06",
+  "aadhar": "1111-2222-3339",
+  "fatherName": "Imran Ali",
+  "motherName": "Shabana Ali",
+  "phone": "9876543246",
+   "subjects": { "maths": 75, "physics": 78, "chemistry": 80, "english": 76, "science": 77 }
+},
+
+{
+  "id": "S147",
+  "name": "Gopi Krishna",
+  "class": "10th",
+  "dob": "2005-07-07",
+  "aadhar": "1111-2222-3340",
+  "fatherName": "Rama Krishna",
+  "motherName": "Padma",
+  "phone": "9876543247",
+  "subjects": { "maths": 20, "physics": 25, "chemistry": 22, "english": 24, "science": 23 }
+},
+
+{
+  "id": "S148",
+  "name": "Hema Patel",
+  "class": "10th",
+  "dob": "2005-08-08",
+  "aadhar": "1111-2222-3341",
+  "fatherName": "Mahesh Patel",
+  "motherName": "Kavita Patel",
+  "phone": "9876543248",
+  "subjects": { "maths": 65, "physics": 68, "chemistry": 70, "english": 66, "science": 67 }
+},
+
+{
+  "id": "S149",
+  "name": "Irfan Khan",
+  "class": "10th",
+  "dob": "2005-09-09",
+  "aadhar": "1111-2222-3342",
+  "fatherName": "Salim Khan",
+  "motherName": "Rehana Khan",
+  "phone": "9876543249", 
+  "subjects": { "maths": 35, "physics": 36, "chemistry": 37, "english": 38, "science": 39 }
+},
+
+{
+  "id": "S150",
+  "name": "Jyothi Rani",
+  "class": "10th",
+  "dob": "2005-10-10",
+  "aadhar": "1111-2222-3343",
+  "fatherName": "Raju",
+  "motherName": "Savitri",
+  "phone": "9876543250", 
+  "subjects": { "maths": 29, "physics": 28, "chemistry": 30, "english": 32, "science": 31 }
+}
+  ],
+
+
+  "teachers": [
+    { "id": "T01", "name": "Mr.Sharma", "subject": "maths" },
+    { "id": "T02", "name": "Ms.Reddy", "subject": "physics" },
+    { "id": "T03", "name": "Mr.Iyer", "subject": "chemistry" },
+    { "id": "T05", "name": "Mr.Singh", "subject": "english" },
+    { "id": "T08", "name": "Ms.Nair", "subject": "science" }
+  ]
+}

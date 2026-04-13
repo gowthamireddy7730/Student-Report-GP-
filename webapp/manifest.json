@@ -1,0 +1,126 @@
+{
+  "_version": "1.83.0",
+  "sap.app": {
+    "id": "globalproject",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.22.0",
+      "toolsId": "802bb339-bf4b-4d52-8a77-6e41d655f0d9"
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "student-display": {
+          "semanticObject": "student",
+          "action": "display",
+          "title": "{{student-display.flpTitle}}",
+          "subTitle": "{{student-display.flpSubtitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": true,
+    "dependencies": {
+      "minUI5Version": "1.146.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "globalproject.i18n.i18n"
+        }
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "./css/style.css"
+        }
+      ]
+    },
+    "routing": {
+      "config": {
+        "fullWidth": true,
+        "routerClass": "sap.m.routing.Router",
+        "controlAggregation": "pages",
+        "controlId": "app",
+        "transition": "slide",
+        "type": "View",
+        "viewType": "XML",
+        "path": "globalproject.view",
+        "async": true,
+        "viewPath": "globalproject.view"
+      },
+      "routes": [
+  {
+    "pattern": "",
+    "name": "home",
+    "target": "home"
+  },
+  {
+    "pattern": "login/{role}",
+    "name": "login",
+    "target": "login"
+  },
+  {
+    "pattern": "student",
+    "name": "student",
+    "target": "student"
+  },
+  {
+    "pattern": "teacher",
+    "name": "teacher",
+    "target": "teacher"
+  }
+],
+      "targets": {
+        "home": { "viewName": "View1" },
+        "login": { "viewName": "View2" },
+        "student": { "viewName": "View3" },
+        "teacher": { "viewName": "View4" }
+      }
+    },
+    "rootView": {
+      "viewName": "globalproject.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

@@ -1,0 +1,110 @@
+<mvc:View
+    controllerName="globalproject.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+<Page title="Student Dashboard" showNavButton="true" navButtonPress="onBack" class="studentPage">
+
+    <VBox class="studentCard">
+         
+        <HBox justifyContent="SpaceBetween" alignItems="Center">
+
+    <Title text="Student Report Card" class="mainHeading"/>
+
+    <HBox>
+        <Button text="Edit" type="Emphasized" press="onEdit" class="sapUiTinyMarginEnd"/>
+        <Button text="Save" type="Accept" press="onSave"/>
+    </HBox>
+
+</HBox>
+      
+        <VBox class="fixedHeader">
+
+            <Label text="ID"/>
+            <Input value="{/student/id}" editable="false" class="loginInput"/>
+
+            <Label text="Name"/>
+            <Input value="{/student/name}" editable="{/isEdit}" class="loginInput"/>
+
+            <Label text="Class"/>
+            <Input value="{/student/class}" editable="false" class="loginInput"/>
+
+        </VBox>
+
+        <!-- ✅ SCROLLABLE CONTENT -->
+        <ScrollContainer height="500px" vertical="true">
+
+            <VBox class="sapUiSmallMargin">
+
+                <Label text="Date of Birth"/>
+                <Input value="{/student/dob}" editable="false" class="loginInput"/>
+
+                <Label text="Father's Name"/>
+                <Input value="{/student/fatherName}" editable="{/isEdit}" class="loginInput"/>
+
+                <Label text="Mother's Name"/>
+                <Input value="{/student/motherName}" editable="{/isEdit}"  class="loginInput"/>
+
+                <Label text="Phone Number"/>
+                <Input value="{/student/phone}" editable="false" class="loginInput"/>
+
+                <Title text="Marks Details" level="H4" class="sapUiSmallMarginTop"/>
+
+<Label text="Maths"/>
+<ObjectStatus 
+    text="{/student/subjects/maths}" 
+    state="{
+    path:'/student/subjects/maths', formatter:'.formatter.isSubjectFail'}"/>
+
+<Label text="Physics"/>
+<ObjectStatus 
+    text="{/student/subjects/physics}" 
+    state="{
+    path:'/student/subjects/physics', formatter:'.formatter.isSubjectFail'}"/>
+
+<Label text="Chemistry"/>
+<ObjectStatus 
+    text="{/student/subjects/chemistry}" 
+    state="{
+    path:'/student/subjects/chemistry', formatter:'.formatter.isSubjectFail'}"/>
+
+<Label text="English"/>
+<ObjectStatus 
+    text="{/student/subjects/english}" 
+    state="{
+    path:'/student/subjects/english', formatter:'.formatter.isSubjectFail'}"/>
+
+<Label text="Science"/>
+<ObjectStatus 
+    text="{/student/subjects/science}" 
+    state="{
+    path:'/student/subjects/science', formatter:'.formatter.isSubjectFail'}"/>
+
+             <Title text="Result Summary" level="H4" class="sapUiSmallMarginTop"/>
+
+<Label text="Total Marks"/>
+<Text text="{/student/total}"/>
+
+<Label text="Percentage"/>
+<ObjectStatus 
+    text="{/student/percentage}"
+    state="{parts:[{path:'/student/subjects/maths'},{path:'/student/subjects/physics'},{path:'/student/subjects/chemistry'},{path:'/student/subjects/english'},{path:'/student/subjects/science'}], formatter:'.formatter.isOverallFail'}"/>
+
+<Label text="Grade"/>
+<ObjectStatus 
+    text="{/student/grade}"
+    state="{parts:[{path:'/student/subjects/maths'},{path:'/student/subjects/physics'},{path:'/student/subjects/chemistry'},{path:'/student/subjects/english'},{path:'/student/subjects/science'}], formatter:'.formatter.isOverallFail'}"/>
+
+<Label text="Status"/>
+<ObjectStatus 
+    text="{/student/status}"
+    state="{parts:[{path:'/student/subjects/maths'},{path:'/student/subjects/physics'},{path:'/student/subjects/chemistry'},{path:'/student/subjects/english'},{path:'/student/subjects/science'}], formatter:'.formatter.isOverallFail'}"/>
+
+            </VBox>
+
+        </ScrollContainer>
+
+    </VBox>
+
+</Page>
+</mvc:View>

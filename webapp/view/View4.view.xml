@@ -1,0 +1,182 @@
+<mvc:View
+    controllerName="globalproject.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    
+    <Page title="Teacher Dashboard" showNavButton="true" navButtonPress="onBack" class="teacherPage">
+
+        <!-- ✅ Added Card Style -->
+        <VBox class="sapUiSmallMargin teacherFull">
+        <HBox justifyContent="SpaceBetween" alignItems="Center" class="sapUiSmallMarginBottom">
+
+    <!-- LEFT SIDE TITLE -->
+    <Text text="Class - X" class="tableTitle"/>
+
+    <!-- RIGHT SIDE BUTTONS -->
+    <HBox>
+        <Button text="Edit" type="Emphasized" press="onEdit" class="sapUiTinyMarginEnd"/>
+        <Button text="Save" type="Accept" press="onSave"/>
+    </HBox>
+
+</HBox>
+          <ScrollContainer horizontal="true" vertical="true" width="100%" height="100%">
+            <Table id="studentTable" items="{/filteredStudents}" class="loginInput">
+             
+                <columns>
+                    <Column><Text text="ID"/></Column>
+                    <Column><Text text="Name"/></Column>
+                    <Column><Text text="Date of Birth"/></Column>
+                    <Column><Text text="Father's Name"/></Column>
+                    <Column><Text text="Mother's Name"/></Column>
+                    <Column><Text text="Phone Number"/></Column>
+                    <Column><Text text="Maths"/></Column>
+                    <Column><Text text="Physics"/></Column>
+                    <Column><Text text="Chemistry"/></Column>
+                    <Column><Text text="English"/></Column>
+                    <Column><Text text="Science"/></Column>
+                    <Column><Text text="Total"/></Column>
+                    <Column><Text text="Percentage"/></Column>
+                    <Column><Text text="Grade"/></Column>
+                    <Column><Text text="Status"/></Column>
+                </columns>
+            
+                <items>
+                    <ColumnListItem>
+                        <cells>
+
+                            <Text text="{id}"/>
+                            <Text text="{name}"/>
+                            <Text text="{dob}"/>
+                            <Text text="{fatherName}"/>
+                            <Text text="{motherName}"/>
+                            <Text text="{phone}"/>
+
+                            <!-- Maths -->
+                            <HBox>
+                                <ObjectStatus text="{subjects/maths}" state="{path:'subjects/maths',formatter:'.formatter.isSubjectFail'}" visible="{= !${/isMaths} }"/>
+                                <Input 
+                                    value="{subjects/maths}" 
+                                    change="onMarksChange" 
+                                    editable="{/isMaths}" 
+                                    visible="{/isMaths}"
+                                    class="loginInput"
+                                    valueState="{path:'subjects/maths',formatter:'.formatter.isSubjectFail'}"/>
+                            </HBox>
+
+                            <!-- Physics -->
+                            <HBox>
+                                <ObjectStatus text="{subjects/physics}" state="{path:'subjects/physics',formatter:'.formatter.isSubjectFail'}" visible="{= !${/isPhysics} }"/>
+                                <Input 
+                                    value="{subjects/physics}" 
+                                    change="onMarksChange" 
+                                    editable="{/isPhysics}" 
+                                    visible="{/isPhysics}"
+                                    class="loginInput"
+                                    valueState="{path:'subjects/physics',formatter:'.formatter.isSubjectFail'}"/>
+                            </HBox>
+
+                            <!-- Chemistry -->
+                            <HBox>
+                                <ObjectStatus text="{subjects/chemistry}" state="{path:'subjects/chemistry',formatter:'.formatter.isSubjectFail'}" visible="{= !${/isChemistry} }"/>
+                                <Input 
+                                    value="{subjects/chemistry}" 
+                                    change="onMarksChange" 
+                                    editable="{/isChemistry}" 
+                                    visible="{/isChemistry}"
+                                    class="loginInput"
+                                    valueState="{path:'subjects/chemistry',formatter:'.formatter.isSubjectFail'}"/>
+                            </HBox>
+
+                            <!-- English -->
+                            <HBox>
+                                <ObjectStatus text="{subjects/english}" state="{path:'subjects/english',formatter:'.formatter.isSubjectFail'}" visible="{= !${/isEnglish} }"/>
+                                <Input 
+                                    value="{subjects/english}" 
+                                    change="onMarksChange" 
+                                    editable="{/isEnglish}" 
+                                    visible="{/isEnglish}"
+                                    class="loginInput"
+                                    valueState="{path:'subjects/english',formatter:'.formatter.isSubjectFail'}"/>
+                            </HBox>
+
+                            <!-- Science -->
+                            <HBox>
+                                <ObjectStatus text="{subjects/science}" state="{path:'subjects/science',formatter:'.formatter.isSubjectFail'}" visible="{= !${/isScience} }"/>
+                                <Input 
+                                    value="{subjects/science}" 
+                                    change="onMarksChange" 
+                                    editable="{/isScience}" 
+                                    visible="{/isScience}"
+                                    class="loginInput"
+                                    valueState="{path:'subjects/science',formatter:'.formatter.isSubjectFail'}"/>
+                            </HBox>
+
+                            <!-- TOTAL -->
+                            <ObjectStatus text="{total}"/>
+
+                            <!-- PERCENTAGE -->
+                            <HBox>
+                                <ObjectStatus 
+                                    text="{percentage}"
+                                    state="{
+                                        parts:[
+                                            {path:'subjects/maths'},
+                                            {path:'subjects/physics'},
+                                            {path:'subjects/chemistry'},
+                                            {path:'subjects/english'},
+                                            {path:'subjects/science'}
+                                        ],
+                                        formatter:'.formatter.isOverallFail'
+                                    }"/>
+                            </HBox>
+
+                            <!-- GRADE -->
+                            <HBox>
+                                <ObjectStatus 
+                                    text="{grade}"
+                                    state="{
+                                        parts:[
+                                            {path:'subjects/maths'},
+                                            {path:'subjects/physics'},
+                                            {path:'subjects/chemistry'},
+                                            {path:'subjects/english'},
+                                            {path:'subjects/science'}
+                                        ],
+                                        formatter:'.formatter.isOverallFail'
+                                    }"/>
+                            </HBox>
+
+                            <!-- STATUS -->
+                            <ObjectStatus
+                                text="{
+                                    parts:[
+                                        {path:'subjects/maths'},
+                                        {path:'subjects/physics'},
+                                        {path:'subjects/chemistry'},
+                                        {path:'subjects/english'},
+                                        {path:'subjects/science'}
+                                    ],
+                                    formatter:'.formatter.getOverallStatus'
+                                }"
+                                state="{
+                                    parts:[
+                                        {path:'subjects/maths'},
+                                        {path:'subjects/physics'},
+                                        {path:'subjects/chemistry'},
+                                        {path:'subjects/english'},
+                                        {path:'subjects/science'}
+                                    ],
+                                    formatter:'.formatter.isOverallFail'
+                                }"/>
+
+                        </cells>
+                    </ColumnListItem>
+                </items>
+                
+            </Table>
+
+        </ScrollContainer>
+        </VBox>
+        
+    </Page>
+</mvc:View>

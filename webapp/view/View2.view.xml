@@ -1,0 +1,54 @@
+<mvc:View
+    controllerName="globalproject.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout">
+
+<Page showNavButton="true" navButtonPress="onBack">
+
+    <content>
+
+        <HBox
+            justifyContent="Center"
+            alignItems="Center"
+            height="100%">
+
+
+            <VBox class="sapUiMediumMarginEnd">
+                <Image
+                    src="{/loginImage}"
+                    width="250px"/>
+            </VBox>
+
+            <VBox
+                width="300px"
+                class="sapUiSmallMargin">
+
+                <Title
+                    text="{= ${/loginRole}.toUpperCase() + ' LOGIN' }"
+                    class="sapUiSmallMarginBottom"/>
+
+                <Input
+                    placeholder="Username"
+                    value="{/login/username}"
+                    class="sapUiSmallMarginBottom"/>
+
+                <Input
+                    placeholder="Password"
+                    type="Password"
+                    value="{/login/password}"
+                    class="sapUiSmallMarginBottom"/>
+
+                <Button
+                    text="Login"
+                    type="Emphasized"
+                    press="onLogin"/>
+
+            </VBox>
+
+        </HBox>
+
+    </content>
+
+</Page>
+</mvc:View>

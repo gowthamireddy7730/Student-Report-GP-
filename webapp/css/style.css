@@ -1,0 +1,123 @@
+.sapMPage {
+    background: linear-gradient(135deg, #e2f01e, #e6efb5) !important;
+}
+
+.studentPage {
+    background: #e887e6;
+}
+
+.studentCard {
+    background: white;
+    width: 400px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.mainHeading {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sapMPage>section {
+    background: transparent !important;
+}
+
+.studentPage .sapMPageEnableScrolling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studentCard {
+    width: 400px;
+    background: #f7f797;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(241, 207, 252, 0.2);
+}
+
+.studentCard .sapMInput {
+    margin-bottom: 10px;
+}
+
+.teacherPage,
+.teacherPage .sapMPage,
+.teacherPage .sapMPage>section {
+    background: #dbfacc !important;
+}
+
+.tableTitle {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.sapUiTinyMarginEnd {
+    margin-right: 8px;
+}
+
+/* HEADER COLOR */
+.sapMTable thead tr th {
+    background-color: #f6bb93a4 !important;
+    color: rgb(222, 78, 16) !important;
+    font-weight: bold;
+}
+
+/* ZEBRA ROWS (you already have, keep it or use this) */
+.sapMListTblRow:nth-child(even) {
+    background-color: #85f2e28a;
+}
+
+/* HOVER EFFECT */
+.sapMListTblRow:hover {
+    background-color: #97b00d !important;
+    cursor: pointer;
+}
+
+.passText .sapMText {
+    color: rgb(0, 113, 0) !important;
+    font-weight: bold;
+}
+
+.failText .sapMText {
+    color: red !important;
+    font-weight: bold;
+}
+
+
+
+/* 🔹 BUTTON COLORS (ONLY ADD, not replace) */
+.sapMBtnEmphasized {
+    background-color: #ce53ea !important;
+}
+
+.sapMBtnAccept {
+    background-color: #8af92fe4 !important;
+}
+
+/* 🔹 OBJECT STATUS COLOR (IMPORTANT FOR YOUR CASE) */
+.sapMObjStatusSuccess {
+    color: green !important;
+    font-weight: bold;
+}
+
+.sapMObjStatusError {
+    color: red !important;
+    font-weight: bold;
+}
+
+/* 🔹 LOGIN PAGE BACKGROUND */
+.studentPage.sapMPage {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4) !important;
+}
+
+.studentPage.sapMPage > section {
+    background: transparent !important;
+}
